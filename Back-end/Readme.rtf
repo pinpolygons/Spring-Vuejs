@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Spring Sercurity\
+-WebSercurityConfigurerAdapter l\'e0 m\uc0\u7845 u ch\u7889 t c\u7911 a vi\u7879 c th\u7921 c hi\u7879 n sercurity c\u7911 a ch\'fang ta. N\'f3 cung c\u7845 p c\u7845 u h\'ecnh HttpSecurity \u273 \u7871 n c\u7845 u h\'ecnh cors, csrf, qu\u7843 n l\'fd session, c\'e1c qui lu\u7853 t cho b\u7843 o m\u7853 t t\'e0i nguy\'ean. Ch\'fang ta c\u361 ng c\'f3 th\u7875  m\u7903  r\u7897 ng v\'e0 tu\u7923  ch\u7881 nh c\u7845 u h\'ecnh m\u7863 c \u273 \u7883 nh \u273 \u7875  ch\u7913 a c\'e1c ph\u7847 n t\u7917  b\'ean trong.\
+-Giao di\uc0\u7879 n UserDetailsService c\'f3 m\u7897 t ph\u432 \u417 ng th\u7913 c \u273 \u7875  t\u7843 i User b\u7857 ng username v\'e0 tr\u7843  v\u7873  m\u7897 t \u273 \u7889 i t\u432 \u7907 ng UserDetails  \u273 \u7875  Spring Security c\'f3 th\u7875  s\u7917  d\u7909 ng cho ch\u7913 ng th\u7921 c v\'e0 c\'f4ng nh\u7853 n\
+-UserDetails ch\uc0\u7913 a c\'e1c th\'f4ng tin c\u7847 n thi\u7871 t \u273 \u7875  x\'e2y d\u7921 ng m\u7897 t \u273 \u7889 i t\u432 \u7907 ng ch\u7913 ng th\u7921 c\
+- UsernamePasswordAuthenticationToken l\uc0\u7845 y \{username, password\} t\u7915  trang y\'eau c\u7847 u login , AuthenticationManager s\u7869  s\u7917  d\u7909 ng n\'f3 \u273 \u7875  ch\u7913 ng th\u7921 c t\'e0i kho\u7843 n \u273 \u259 ng nh\u7853 p.\
+-AuthenticationMaager c\'f3 m\uc0\u7897 t DaoAuthenticationProvide (v\u7899 i gi\'fap \u273 \u7905  c\u7911 a UserDetailsService v\'e0 PasswordEncoder) ch\u7913 ng nh\u7853 n \u273 \u7889 i t\u432 \u7907 ng AuthenticationToken. N\u7871 u th\'e0nh c\'f4ng, AuthenticationManager tr\u7843  v\u7873  1 \u273 \u7889 i t\u432 \u7907 ng ch\u7913 ng th\u7921 c ph\u7893  \u273 i\u7871 n \u273 \u7847 y \u273 \u7911  (bao g\u7891 m c\u7843  ngu\u7891 n cung c\u7845 p)\
+-OncePerRequestFilter l\'e0m m\uc0\u7897 t th\u7921 c \u273 \u417 n cho m\u7895 i y\'eau c\u7847 u \u273 \u7871 n API c\u7911 a ch\'fang ta. N\'f3 cung c\u7845 p m\u7897 t ph\u432 \u417 ng th\u7913 c doFilterInternal() \u273 \u7875  ch\'fang ta th\u7921 c hi\u7879 n ph\'e2n t\'edch v\'e0 x\'e1c nh\u7853 n JWT, t\u7843 i c\'e1c chi ti\u7871 t t\'e0i kho\u7843 n (s\u7917  d\u7909 ng UserDetailsService), ki\u7875 m tra Authorization (s\u7917  d\u7909 ng UsernamePasswordAuthenticationToken).\
+- AuthenticationEntryPoint s\uc0\u7869  b\u7855 t l\u7895 i tr\'e1i ph\'e9p v\'e0 tr\u7843  v\u7873  m\u7897 t 401 khi c\'e1c Client truy c\u7853 p t\'e0i nguy\'ean b\u7843 o m\u7853 t m\u7863 c d\'f9 kh\'f4ng ch\u7913 ng th\u7921 c\
+Kho ch\uc0\u7913  UserRepository v\'e0 RoleRopository \u273 \u7875  l\'e0m vi\u7879 c v\u7899 i Database, s\u7869  \u273 \u432 \u7907 c import t\u7899 i Controller\
+Controller s\uc0\u7869  nh\u7853 n v\'e0 x\u7917  l\'fd c\'e1c y\'eau c\u7847 u sau khi n\'f3 \u273 \'e3 \u273 \u432 \u7907 c \u273 i\u7873 n b\u7903 i OncePerRequestFilter\
+- AuthController x\uc0\u7917  l\'fd c\'e1c y\'eau c\u7847 u \u273 \u259 ng nh\u7853 p/\u273 \u259 ng k\'fd\
+-TestController c\'f3 truy c\uc0\u7853 p c\'e1c ph\u432 \u417 ng th\u7913 c t\'e0i nguy\'ean \u273 \u432 \u7907 c b\u7843 o m\u7853 t v\u7899 i ki\u7877 m ch\u7913 ng d\u7921 a tr\'ean quy\u7873 n\
+C\'e1c c\'f4ng ngh\uc0\u7879 \
+- Java 8\
+-Spring Boot 2.1.8.RELEASE (v\uc0\u7899 i Spring Security, Spring Web, Spring Data JPA)\
+-jjwt 0.9.1\
+-Maven 3.6.1\
+C\uc0\u7845 u tr\'fac d\u7921  \'e1n\
+Bao g\uc0\u7891 m 5 package\
+-Security: Ch\'fang ta c\uc0\u7845 u h\'ecnh Spring Sercurity v\'e0 th\u7921 c hi\u7879 n c\'e1c \u273 \u7889 i t\u432 \u7907 ng Security t\u7841 i \u273 \'e2y\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}WebSecurityConfig m\uc0\u7903  r\u7897 ng t\u7915  WebSecurityConfigurerAdapter\
+{\listtext	\uc0\u8226 	}UserDetailsServiceImpl th\uc0\u7921 c hi\u7879 n UserDetailsService\
+{\listtext	\uc0\u8226 	}UserDetailsImple th\uc0\u7921 c hi\u7879 n UserDetails\
+{\listtext	\uc0\u8226 	}AuthEntryPointJwt th\uc0\u7921 c hi\u7879 n AuthenticationEntryPoint\
+{\listtext	\uc0\u8226 	}AuthTokenFilter m\uc0\u7903  r\u7897 ng OncePerRequestFilter\
+{\listtext	\uc0\u8226 	}JwtUtils cug c\uc0\u7845 p c\'e1c ph\u432 \u417 ng th\u7913 c cho tao, ph\'e2n t\'edch, x\'e1c nh\u7853 n JWT\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 -Controllers x\uc0\u7917  l\'fd c\'e1c y\'eau c\u7847 u \u273 \u259 ng nh\u7853 p/ \u273 \u259 ng k\'fd v\'e0 c\'e1c y\'eau c\u7847 u u\u7927  quy\u7873 n\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}AuthController: @PostMapping(\'91/signin\'92), @PostMapping(\'91/signup\'92)\
+{\listtext	\uc0\u8226 	}TestController: @GetMapping(\'91/api/test/all\'92), @GetMapping(\'91/api/test/[role]\'92)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Repository c\'f3 c\'e1c giao di\uc0\u7879 n \u273 \u7875  m\u7903  r\u7897 ng Spring Data JPA JpaRepository \u273 \u7875  t\u432 \u417 ng t\'e1c v\u7899 i Database\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\uc0\u8226 	}UserRepository m\uc0\u7903  r\u7897 ng JpaRepository\
+{\listtext	\uc0\u8226 	}RoleRepository m\uc0\u7903  r\u7897 ng JpaRepository\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Models x\'e1c \uc0\u273 \u7883 nh hai th\'e0nh ph\u7847 n m\'f4 h\'ecnh ch\'ednh cho Authentication( User) & Authorization (Role). Ch\'fang c\'f3 m\u7889 i quan h\u7879  many-to-many\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0\cf0 {\listtext	\uc0\u8226 	}User: id, username, email, password, roles\
+{\listtext	\uc0\u8226 	}Role: id, name\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Payload x\'e1c \uc0\u273 \u7883 nh c\'e1c l\u7899 p cho c\'e1c \u273 \u7889 i t\u432 \u7907 ng y\'eau c\u7847 u v\'e0 ph\u7843 n h\u7891 i\
+Ch\'fang ta c\uc0\u361 ng c\'f3 application.properties cho c\u7845 u h\'ecnh Spring Datasource, Spring Data JPA v\'e0 App properties (Chu\u7895 i b\u7843 o m\u7853 t JWT ho\u7863 c th\u7903 i gian h\u7871 t h\u7841 n Token)\
+}
