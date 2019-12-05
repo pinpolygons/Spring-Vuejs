@@ -1,5 +1,8 @@
 package com.pin.springbootlanguage.springbootlanguage.models;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -41,7 +44,6 @@ public class Language {
 		this.en = en;
 	}
 
-	
 	public void setId(Long id) {
 		this.id = id;
 	}
@@ -77,7 +79,15 @@ public class Language {
 	public String getEn() {
 		return en;
 	}
-	
-	
+	public Map<String, String> viLang() {
+		Map<String, String> viLang = new HashMap<>(); 
+		viLang.put(getContent(), getVi());
+		return viLang;
+	}
+	public Map<String, String> enLang() {
+		Map<String, String> enLang = new HashMap<>(); 
+		enLang.put(getContent(), getEn());
+		return enLang;
+	}
 
 }
